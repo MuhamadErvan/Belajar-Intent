@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:padding="20dp"
+    android:background="#00ADFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BELAJAR INTENT"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
+
+    <Button
+        android:text="TELEPON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:id="@+id/btnpgl"
+        android:onClick="panggil"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="BUKA BROWSER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnpgl"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnbuka"
+        android:layout_marginTop="30dp"
+        android:onClick="buka"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="TENTANG PEMBUAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnbuka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btninfo"
+        android:onClick="tentang"
+        tools:ignore="OnClick" />
+</RelativeLayout>
